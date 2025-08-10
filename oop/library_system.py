@@ -7,7 +7,7 @@ class Book:
         return f"Book: {self.title} by {self.author}"
 
 
-class Ebook(Book):
+class EBook(Book):
     def __init__(self, title: str, author: str, file_size: int):
         super().__init__(title, author)
         self.file_size = file_size
@@ -34,4 +34,4 @@ class Library:
 
     def list_books(self):
         for book in self.books:
-            print(book)  # __str__ handles display now
+            print(book)  
